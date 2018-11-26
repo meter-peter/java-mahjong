@@ -12,15 +12,14 @@ package mahjong;
  abstract public class Tile {
     private int x , y;
      
- public Tile(){
-     
-     this.x=x;
-     this.y=y;
-     
-     
-     
-     
+    public void setPos(int[] p){
+           this.x = p[0];
+           this.y = p[1];
+       }
+ 
+ 
+    public int[]
+ 
  }
-
+ 
     
-}
