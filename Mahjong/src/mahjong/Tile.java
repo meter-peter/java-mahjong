@@ -9,6 +9,18 @@ package mahjong;
  *
  * @author Petros
  */
-public class Tile {
+ abstract public class Tile {
+    private int x , y;
+     
+ public Tile(){
+     
+     this.x=x;
+     this.y=y;
+     
+     
+     
+     
+ }
+
     
 }
