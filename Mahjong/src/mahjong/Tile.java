@@ -5,35 +5,30 @@
  */
 package mahjong;
 
-/**
- *
- * @author Petros
- */
- abstract public class Tile {
-    private int x , y;
+import java.awt.*;
+import java.util.ArrayList;
+import javax.swing.JPanel;
 
-    public int getX() {
-        return x;
-    }
+abstract public class Tile {
 
-    public int getY() {
-        return y;
-    }
-
-    public void setX(int x) {
-        this.x = x;
-    }
-
-    public void setY(int y) {
-        this.y = y;
-    }
-     
-  
+    private int x, y;
+   // private ImageView obrazok;
     
- 
- 
-  
- 
- }
- 
+    private boolean clicked;
+    
+   
+    public abstract Tile copy();
+
+    public void setCoords(int[] c){
+        this.x = c[0];
+        this.y = c[1];
+       
+    }
+    public int[] getCoords(){
+        int[] c = {x,y};
+        return c;
+    }
+    public void setClicked(boolean clicked){
+        this.clicked = clicked;
+    }
     

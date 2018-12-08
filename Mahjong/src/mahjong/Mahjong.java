@@ -5,6 +5,8 @@
  */
 package mahjong;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Petros
@@ -17,5 +19,7 @@ public class Mahjong {
     public static void main(String[] args) {
         // TODO code application logic here
     }
+    ArrayList<Tile> allTiles=new ArrayList<Tile>
+            
     
 }

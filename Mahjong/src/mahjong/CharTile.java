@@ -10,9 +10,8 @@ package mahjong;
  * @author Petros
  */
  abstract public class CharTile extends Tile{
+     char ch; //Den ilopoioume akoma ta grafika opote gia ti diaforopoihsh twn Tiles Xrhsimopoioume mia char metavlhth
      
      
      
-     
-    
-}
+  }
