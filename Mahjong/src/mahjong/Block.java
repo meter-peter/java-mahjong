@@ -1,10 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package mahjong;
+//Petros Evangelos Triantafyllis icsd17193 - Panteleimon Vadolas icsd13020
 
+package mahjong;
+import mahjong.TileTypes.*;
 /**
  *
  * @author Petros
@@ -15,7 +12,7 @@ public class Block {
     private boolean containsTile;
     
     public Block(Object tile, int x , int y){
-        this.tile= (Tile)tile;
+        this.tile=(Tile)tile;
         this.x=x;
         this.y=y;
         containsTile=true;
