@@ -20,6 +20,7 @@ public class Mahjong {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        System.out.println("Geia eimai o alekshs gia oles tis orekseis");
     
     
     }
