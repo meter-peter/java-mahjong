@@ -7,32 +7,27 @@
 package mahjong;
 
 
-abstract public class Tile {
+import javax.swing.JButton;
+import javax.swing.ImageIcon;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
-    private int x, y;
-    
-    private boolean clicked;
-    
-    
-
-    public void setCoords(int[] c){
-        this.x = c[0];
-        this.y = c[1];
-       
-    }
-    public int[] getCoords(){
-        int[] c = {x,y};
-        return c;
-    }
-    public void Clicked(boolean clicked){
-        this.clicked = clicked;
-    }
-    
-
-     public boolean Check(Tile other){
-        if(this.getClass() == other.getClass())
-            return true;
-
-        return false;
-    }
+public abstract class Tile extends JButton implements ActionListener{
+    int x,y;
+	
+	
+	public void actionPerformed(ActionEvent e){
+	
+		switch(x){
+			case 0:
+				
+				break;
+			case 1:
+				
+				break;
+			case 2:
+				
+				break;
+		}
+	}
 }

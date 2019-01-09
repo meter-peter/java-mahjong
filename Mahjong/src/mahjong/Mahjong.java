@@ -1,30 +1,32 @@
-//Petros Evangelos Triantafyllis icsd17193 - Panteleimon Vadolas icsd13020
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package mahjong;
 
-import java.util.ArrayList;
 
-/**
- *
- * @author Petros
- */
-public class Mahjong {
-    Board board=new Board();
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-        System.out.println("Geia eimai o alekshs gia oles tis orekseis");
-    
-    
-    }
-   
-            
-    
+import javax.swing.JPanel;
+import javax.swing.JFrame;
+import java.awt.GridLayout;
+
+public class Mahjong extends JFrame{
+	JPanel p=new JPanel();
+	BabuTile buttons[]=new BabuTile[144];
+	
+	public static void main(String args[]){
+		new Mahjong();
+	}
+	
+	public Mahjong(){
+		super("TicTacToe");
+		setSize(1000,1000);
+		setResizable(false);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		p.setLayout(new GridLayout(12,12));
+           
+		for(int i=0;i<144;i++){
+			buttons[i]=new BabuTile();
+			p.add(buttons[i]);
+		}
+		add(p);
+		
+		setVisible(true);
+	}
 }
